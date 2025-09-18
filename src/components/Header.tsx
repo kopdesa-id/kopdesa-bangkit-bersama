@@ -32,7 +32,9 @@ const Header = () => {
             <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-xl">K</span>
             </div>
-            <span className="font-poppins font-bold text-xl text-foreground">kopdesa.id</span>
+            <span className={`font-poppins font-bold text-xl transition-colors duration-300 ${
+              isScrolled ? 'text-foreground' : 'text-white'
+            }`}>kopdesa.id</span>
           </div>
 
           {/* Desktop Menu */}
@@ -41,7 +43,9 @@ const Header = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                className={`hover:text-primary transition-colors duration-300 font-medium ${
+                  isScrolled ? 'text-foreground' : 'text-white hover:text-white/80'
+                }`}
               >
                 {item.label}
               </a>
@@ -52,7 +56,11 @@ const Header = () => {
           <div className="hidden md:block">
             <a
               href="#konsultasi"
-              className="btn-hero"
+              className={`transition-all duration-300 px-6 py-3 rounded-lg font-medium ${
+                isScrolled 
+                  ? 'btn-hero' 
+                  : 'bg-white text-primary hover:bg-white/90 hover:scale-105'
+              }`}
             >
               Jadwalkan Konsultasi Gratis
             </a>
@@ -61,7 +69,9 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
+            className={`md:hidden p-2 hover:text-primary transition-colors ${
+              isScrolled ? 'text-foreground' : 'text-white'
+            }`}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -69,12 +79,16 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-4">
+          <div className={`md:hidden mt-4 pb-4 space-y-4 rounded-lg p-4 ${
+            isScrolled ? 'bg-background/95 backdrop-blur-md' : 'bg-black/20 backdrop-blur-md'
+          }`}>
             {menuItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="block text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                className={`block hover:text-primary transition-colors duration-300 font-medium ${
+                  isScrolled ? 'text-foreground' : 'text-white'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
@@ -82,7 +96,11 @@ const Header = () => {
             ))}
             <a
               href="#konsultasi"
-              className="block w-full text-center btn-hero mt-4"
+              className={`block w-full text-center transition-all duration-300 px-6 py-3 rounded-lg font-medium ${
+                isScrolled 
+                  ? 'btn-hero' 
+                  : 'bg-white text-primary hover:bg-white/90'
+              } mt-4`}
               onClick={() => setIsMenuOpen(false)}
             >
               Jadwalkan Konsultasi Gratis
