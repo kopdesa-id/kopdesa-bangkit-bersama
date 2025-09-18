@@ -1,12 +1,54 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useEffect } from 'react';
+import Header from '@/components/Header';
+import HeroSection from '@/components/HeroSection';
+import WhyKopdesa from '@/components/WhyKopdesa';
+import ProgramSection from '@/components/ProgramSection';
+import HowItWorks from '@/components/HowItWorks';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import LeadMagnet from '@/components/LeadMagnet';
+import FAQSection from '@/components/FAQSection';
+import ContactForm from '@/components/ContactForm';
+import Footer from '@/components/Footer';
 
 const Index = () => {
+  useEffect(() => {
+    // Scroll animation observer
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all fade-in and slide-in elements
+    const animatedElements = document.querySelectorAll('.fade-in, .slide-in-right');
+    animatedElements.forEach(el => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Header />
+      
+      <main>
+        <HeroSection />
+        <WhyKopdesa />
+        <ProgramSection />
+        <HowItWorks />
+        <TestimonialsSection />
+        <LeadMagnet />
+        <FAQSection />
+        <ContactForm />
+      </main>
+
+      <Footer />
     </div>
   );
 };
