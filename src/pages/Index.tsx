@@ -5,7 +5,7 @@ import WhyKopdesa from '@/components/WhyKopdesa';
 import ProgramSection from '@/components/ProgramSection';
 import HowItWorks from '@/components/HowItWorks';
 import TestimonialsSection from '@/components/TestimonialsSection';
-import LeadMagnet from '@/components/LeadMagnet';
+
 import FAQSection from '@/components/FAQSection';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
@@ -43,7 +43,7 @@ const Index = () => {
         <ProgramSection />
         <HowItWorks />
         <TestimonialsSection />
-        <LeadMagnet />
+        
         <FAQSection />
         <ContactForm />
       </main>
