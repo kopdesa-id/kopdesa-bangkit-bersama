@@ -96,7 +96,7 @@ const FAQSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Kopdesa%2C%20saya%20ingin%20bertanya%20tentang%20program%20pelatihan"
+              href="https://wa.me/6282297898514?text=Halo%20Kopdesa%2C%20saya%20ingin%20bertanya%20tentang%20program%20pelatihan"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline bg-primary-foreground/10 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"

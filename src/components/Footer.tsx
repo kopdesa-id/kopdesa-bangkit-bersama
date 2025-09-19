@@ -50,17 +50,18 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Phone size={16} className="text-secondary" />
-                  <span className="text-sm">+62 812-3456-7890</span>
+                  <span className="text-sm">+62 822-9789-8514</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail size={16} className="text-secondary" />
-                  <span className="text-sm">halo@kopdesa.id</span>
+                  <span className="text-sm">kampusrwid@gmail.com</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <MapPin size={16} className="text-secondary mt-0.5" />
                   <span className="text-sm">
-                    Jl. Pembangunan Desa No. 123<br />
-                    Jakarta Selatan 12345
+                    Kaliurang St KM.5 No.21, Karang Wuni<br />
+                    Caturtunggal, Depok, Sleman Regency<br />
+                    Special Region of Yogyakarta 55281
                   </span>
                 </div>
               </div>

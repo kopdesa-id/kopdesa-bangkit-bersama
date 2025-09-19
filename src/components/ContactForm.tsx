@@ -104,9 +104,9 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">WhatsApp</h4>
-                    <p className="text-muted-foreground mb-2">+62 812-3456-7890</p>
+                    <p className="text-muted-foreground mb-2">+62 822-9789-8514</p>
                     <a
-                      href="https://wa.me/6281234567890?text=Halo%20Kopdesa%2C%20saya%20ingin%20konsultasi%20gratis"
+                      href="https://wa.me/6282297898514?text=Halo%20Kopdesa%2C%20saya%20ingin%20konsultasi%20gratis"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary hover:text-primary-dark font-medium"
@@ -122,7 +122,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Email</h4>
-                    <p className="text-muted-foreground mb-2">halo@kopdesa.id</p>
+                    <p className="text-muted-foreground mb-2">kampusrwid@gmail.com</p>
                     <p className="text-sm text-muted-foreground">Respon dalam 4 jam kerja</p>
                   </div>
                 </div>
@@ -134,9 +134,9 @@ const ContactForm = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Alamat</h4>
                     <p className="text-muted-foreground">
-                      Jl. Pembangunan Desa No. 123<br />
-                      Jakarta Selatan 12345<br />
-                      Indonesia
+                      Kaliurang St KM.5 No.21, Karang Wuni<br />
+                      Caturtunggal, Depok, Sleman Regency<br />
+                      Special Region of Yogyakarta 55281
                     </p>
                   </div>
                 </div>
